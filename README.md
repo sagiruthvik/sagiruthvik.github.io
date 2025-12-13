@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+Sagi Ruthvik - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my work as a Full Stack Developer. Built with vanilla HTML, CSS, and JavaScript for optimal performance and simplicity.
+🌟 Features
 
-## Available Scripts
+Responsive Design: Fully responsive layout that works seamlessly across all devices
+Dark/Light Theme: Toggle between dark and light modes with persistent theme preference
+Smooth Navigation: Single-page application with smooth scrolling to sections
+Interactive UI: Hover effects, animations, and transitions for enhanced user experience
+Contact Form: Integrated with Formspree for direct email communication
+Performance Optimized: Lightweight and fast-loading with no external dependencies
 
-In the project directory, you can run:
+🛠️ Tech Stack
 
-### `npm start`
+HTML5: Semantic markup for better SEO and accessibility
+CSS3: Modern styling with CSS variables, Grid, and Flexbox
+JavaScript: Vanilla JS for theme toggling, smooth scrolling, and form handling
+Formspree: Backend service for contact form submissions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📂 Project Structure
+.
+├── index.html          # Main portfolio website
+├── .nojekyll          # GitHub Pages configuration
+├── README.md          # Project documentation
+└── src/               # Legacy React files (not used)
+🚀 Live Demo
+Visit the live site: https://sagiruthvik.github.io/
+💻 Local Development
+To run this project locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the repository
 
-### `npm test`
+bash   git clone https://github.com/sagiruthvik/sagiruthvik.github.io.git
+   cd sagiruthvik.github.io
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open in browser
 
-### `npm run build`
+Simply open index.html in your preferred browser
+Or use a local server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash     # Using Python
+     python -m http.server 8000
+     
+     # Using Node.js http-server
+     npx http-server
+     
+     # Using VS Code Live Server extension
+     Right-click index.html → Open with Live Server
 
-### `npm run eject`
+View the site
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Direct file: file:///path/to/index.html
+Local server: http://localhost:8000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🎨 Customization
+Changing Colors
+Edit the CSS variables in index.html (inside <style> tag):
+css:root {
+    --accent: #2563eb;        /* Primary accent color */
+    --accent-hover: #1d4ed8;  /* Hover state color */
+    /* Add more customizations */
+}
+Adding Projects
+Locate the #projects section and add a new project card:
+html<div class="project-card">
+    <h3>Project Name</h3>
+    <p class="project-description">Description here</p>
+    <div class="project-tech">
+        <span class="tech-tag">Technology</span>
+    </div>
+    <div class="project-links">
+        <a href="github-link" target="_blank" class="project-link">View Code →</a>
+    </div>
+</div>
+Contact Form Setup
 
-## Learn More
+Sign up at Formspree
+Create a new form
+Replace YOUR_FORM_ID in the form action:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+html   <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+📱 Sections
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Home: Introduction and quick links
+About: Professional background and interests
+Skills: Technical skills organized by category
+Experience: Work history with detailed responsibilities
+Education: Academic qualifications
+Projects: Featured personal and professional projects
+Contact: Get in touch via contact form
 
-### Code Splitting
+🌐 Deployment
+This site is deployed using GitHub Pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Push changes to the main branch
+GitHub Pages automatically serves index.html from the root
+Changes go live within 2-3 minutes
 
-### Analyzing the Bundle Size
+GitHub Pages Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Source: Deploy from a branch
+Branch: main
+Folder: / (root)
 
-### Making a Progressive Web App
+📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Email: ruthvik.1202@gmail.com
+LinkedIn: linkedin.com/in/sagiruthvik
+GitHub: github.com/sagiruthvik
 
-### Advanced Configuration
+📄 License
+This project is open source and available under the MIT License.
+🙏 Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Design inspiration from modern portfolio websites
+Icons and fonts from system defaults for optimal performance
+Contact form powered by Formspree
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: The src/ folder contains legacy React files from a previous version and is not used in the current portfolio implementation.
