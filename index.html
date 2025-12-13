@@ -67,6 +67,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--accent);
+            cursor: pointer;
         }
 
         .nav-links {
@@ -86,6 +87,10 @@
 
         .nav-links a:hover {
             color: var(--accent);
+        }
+
+        .logo:hover {
+            color: black;
         }
 
         .theme-toggle {
@@ -544,10 +549,9 @@
 <body>
 <header>
     <nav>
-        <div class="logo">SR</div>
+        <div class="logo" onclick="scrollToSection('home')">SR</div>
         <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
         <ul class="nav-links" id="navLinks">
-            <li><a onclick="scrollToSection('home')">Home</a></li>
             <li><a onclick="scrollToSection('about')">About</a></li>
             <li><a onclick="scrollToSection('skills')">Skills</a></li>
             <li><a onclick="scrollToSection('experience')">Experience</a></li>
@@ -872,7 +876,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 Sagi Ruthvik. Built with passion and code.</p>
+    <p>&copy; 2025 Sagi Ruthvik. Built with passion and code.</p>
 </footer>
 
 <script>
