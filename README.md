@@ -49,40 +49,6 @@ bash     # Using Python
      # Using VS Code Live Server extension
      Right-click index.html → Open with Live Server
 
-View the site
-
-Direct file: file:///path/to/index.html
-Local server: http://localhost:8000
-
-
-
-🎨 Customization
-Changing Colors
-Edit the CSS variables in index.html (inside <style> tag):
-css:root {
-    --accent: #2563eb;        /* Primary accent color */
-    --accent-hover: #1d4ed8;  /* Hover state color */
-    /* Add more customizations */
-}
-Adding Projects
-Locate the #projects section and add a new project card:
-html<div class="project-card">
-    <h3>Project Name</h3>
-    <p class="project-description">Description here</p>
-    <div class="project-tech">
-        <span class="tech-tag">Technology</span>
-    </div>
-    <div class="project-links">
-        <a href="github-link" target="_blank" class="project-link">View Code →</a>
-    </div>
-</div>
-Contact Form Setup
-
-Sign up at Formspree
-Create a new form
-Replace YOUR_FORM_ID in the form action:
-
-html   <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 📱 Sections
 
 Home: Introduction and quick links
